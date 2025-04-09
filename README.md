@@ -1,25 +1,19 @@
-# Welcome to Orion Ui Library Created By Shlexware. (DELETED)
-
 # Orion Library
 This documentation is for the stable release of Orion Library.
 
 ## Booting the Library
 ```lua
-local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/Legitxwx/OrionLib/main/source.lua')))()
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/jensonhirst/Orion/main/source')))()
 ```
 
 
 
 ## Creating a Window
 ```lua
-local Window = OrionLib:MakeWindow({
-    Name = "Title of the library",
-    HidePremium = false,
-    IntroText = "Your Text",
-    SaveConfig = true,
-    ConfigFolder = "OrionConfig"
-})
+local Window = OrionLib:MakeWindow({Name = "Title of the library", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
 ```
+
+
 
 ## Creating a Tab
 ```lua
@@ -28,7 +22,6 @@ local Tab = Window:MakeTab({
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
-
 ```
 ## Creating a Section
 ```lua
@@ -211,8 +204,6 @@ Tab1:AddToggle({
     Save = true,
     Flag = "toggle"
 })
-
-print(OrionLib.Flags["toggle"].Value) -- prints the value of the toggle.
 ```
 Flags only work with the toggle, slider, dropdown, bind, and colorpicker.
 
